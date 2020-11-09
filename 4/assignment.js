@@ -12,7 +12,7 @@ for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
 }
 
-for (let element of array) {
+for (const element of array) {
     console.log(element);
 }
 
