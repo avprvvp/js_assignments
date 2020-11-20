@@ -6,23 +6,19 @@ sayHello();
 
 //Task 1
 
-const name = 'Test';
-
 const sayHelloArrowFunction = (name) => {
 	console.log('Hi ' + name);
 }
 
-sayHelloArrowFunction(name);
+sayHelloArrowFunction('Test');
 
 //Task 2
-
-const hi = 'Hi ';
 
 function sayHelloWithArg(hi, name) {
 	console.log(hi + name + ' 1');
 }
 
-sayHelloWithArg(hi, name);
+sayHelloWithArg('Hi ', 'Test');
 
 function sayHelloWithoutArg() {
 	console.log('Hi ' + 'Test' + ' 2');
@@ -34,7 +30,7 @@ function returnSayHello(name) {
 	return ('Hi ' + name + ' 3');
 }
 
-console.log(returnSayHello(name));
+console.log(returnSayHello('Test'));
 
 //Task 3
 
@@ -47,8 +43,8 @@ sayHelloWithDefaultArg();
 //Task 4
 
 const checkInput = (callback, ...argument) => {
-	let i = 0
-
+	let i = 0;
+	
 	argument.map(function(argument) {
 		if (argument === '') {
 			i = 1;
